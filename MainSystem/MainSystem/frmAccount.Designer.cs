@@ -33,6 +33,9 @@
             this.grpStudentDetails = new System.Windows.Forms.GroupBox();
             this.lblID = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtStudentName = new System.Windows.Forms.TextBox();
+            this.lblStudentName = new System.Windows.Forms.Label();
             this.grpStudentDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +58,9 @@
             // 
             // grpStudentDetails
             // 
+            this.grpStudentDetails.Controls.Add(this.txtStudentName);
+            this.grpStudentDetails.Controls.Add(this.lblStudentName);
+            this.grpStudentDetails.Controls.Add(this.txtID);
             this.grpStudentDetails.Controls.Add(this.lblID);
             this.grpStudentDetails.Location = new System.Drawing.Point(12, 274);
             this.grpStudentDetails.Name = "grpStudentDetails";
@@ -66,9 +72,10 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(17, 31);
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(16, 30);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.Size = new System.Drawing.Size(21, 16);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID";
             // 
@@ -79,6 +86,31 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(941, 180);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(115, 30);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(180, 20);
+            this.txtID.TabIndex = 1;
+            this.txtID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtStudentName
+            // 
+            this.txtStudentName.Location = new System.Drawing.Point(115, 66);
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(180, 20);
+            this.txtStudentName.TabIndex = 3;
+            // 
+            // lblStudentName
+            // 
+            this.lblStudentName.AutoSize = true;
+            this.lblStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentName.Location = new System.Drawing.Point(16, 66);
+            this.lblStudentName.Name = "lblStudentName";
+            this.lblStudentName.Size = new System.Drawing.Size(93, 16);
+            this.lblStudentName.TabIndex = 2;
+            this.lblStudentName.Text = "Student Name";
             // 
             // frmAccount
             // 
@@ -106,5 +138,8 @@
         private System.Windows.Forms.GroupBox grpStudentDetails;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtStudentName;
+        private System.Windows.Forms.Label lblStudentName;
     }
 }
