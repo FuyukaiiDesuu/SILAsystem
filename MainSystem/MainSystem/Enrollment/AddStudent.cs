@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace MainSystem
 {
-    public partial class Form1 : Form
+    public partial class AddStudent : Form
     {
-        public Form1()
+        public EnrollmentMain reference { get; set; }
+        public AddStudent()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            reference.Show();
+            this.Close();
         }
     }
 }
